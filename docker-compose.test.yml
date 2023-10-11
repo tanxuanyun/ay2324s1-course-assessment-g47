@@ -1,5 +1,4 @@
 version: '3.8'
-
 services:
   # MongoDB Database
   mongodb:
@@ -38,3 +37,4 @@ services:
 networks:
   app-network:
     driver: bridge
+
