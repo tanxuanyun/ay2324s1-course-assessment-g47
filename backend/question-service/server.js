@@ -37,6 +37,6 @@ const connectWithRetry = () => {
 			setTimeout(connectWithRetry, 5000);
 		});
 };
-
-// Call the connection function to initiate the connection process
 connectWithRetry();
+
+module.exports = app;
