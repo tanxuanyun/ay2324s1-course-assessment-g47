@@ -45,7 +45,7 @@ describe('Question API Test', function () {
         .set('Authorization', `Bearer ${token}`)
         .send(newQuestion)
         .end((err, res) => {
-          expect(res).to.have.status(200);
+          expect(res).to.have.status(203);
           expect(res.body).to.be.an('object');
           createdQuestionId = res.body._id;
           done();
